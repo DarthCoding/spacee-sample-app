@@ -29,8 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Create Docker image
 
-docker build -t beautato/client-app .
+docker build -t <your username>/client-app .
 
 ## Run Docker
 
-docker run -d -it -p 80:80/tcp --name client-app beautato/client-app:latest
+docker run -d -it -p 80:80/tcp --name client-app <your username>/client-app:latest
