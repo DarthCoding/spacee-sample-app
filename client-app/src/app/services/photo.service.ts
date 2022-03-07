@@ -8,7 +8,7 @@ import { Photo } from '../models/photo';
 })
 export class PhotoService {
 
-  readonly baseUrl: string = 'http://localhost:49160';  // when running in docker you must use 'localhost:49160'. When running locally use 'localhost:8080'
+  readonly baseUrl: string = 'http://localhost:49160';
 
   constructor(private http: HttpClient) { }
 
