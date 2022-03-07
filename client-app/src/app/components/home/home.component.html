@@ -1,0 +1,16 @@
+<div style="text-align: center; margin: 40px 0px;">
+    <h1><span style="color: #e68147;">Mars</span> Rover Image Picker!</h1>
+</div>
+<div style="text-align: center; margin: 40px 0px;">
+    <input style="margin-right: 20px;" type="date" [formControl]="dateControl">
+    <button (click)="submit()">Submit</button>
+</div>
+<div *ngIf="this.photoCount > 0" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div *ngFor="let photo of photos" >
+        <app-photo-tile [photo]="photo"></app-photo-tile>
+    </div>
+</div>
+<div style="text-align: center; margin: 40px 0px;" *ngIf="this.photoCount == 0">
+    <h1>No Images available for the date selected.</h1>
+</div>
+
